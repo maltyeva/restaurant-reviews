@@ -4,7 +4,7 @@
   <div class="form-inputs">
     <%= f.input :name %>
     <%= f.input :address %>
-    <%= f.input :stars, collection: (1..5), as: :radio_buttons %>
+    <%= f.input :stars, collection: (1..5), as: :radio_buttons, wrapper_html: { class: 'red' } %>
   </div>
   <div class="form-actions">
     <%= f.button :submit %>
