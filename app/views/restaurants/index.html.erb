@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+<h1>Restaurants</h1>
+<%= render 'restaurants', restaurants: @restaurants %>
+<%= render 'restaurants', restaurants: @top_restaurants %>
+<%= render 'restaurants', restaurants: @worst_restaurants %>
+<br>
+<%= link_to 'New Restaurant', new_restaurant_path %> | 
+<%= link_to "See the best restaurants", top_restaurants_path %> | 
+<%= link_to "See the worst restaurants", worst_restaurants_path %>
